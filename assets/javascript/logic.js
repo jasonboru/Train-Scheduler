@@ -47,6 +47,15 @@ $("#submit").on("click", function() {     // upon click of submit button
   
 });
 
+$("#clearDB").on("click", function() {     // upon click of submit button
+  var emptyFirebase = confirm("Are you sure you want to clear out the database? Once you have the train has left station and there is no going back.");
+
+  if (emptyFirebase) {
+    trainRef.remove();
+  }
+  
+});
+
 //Create Firebase event when adding train to the database then add a row in the html table
 database.ref("/trainData").on("child_added", function(childSnapshot, prevChildKey) {
 

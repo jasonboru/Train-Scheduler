@@ -36,3 +36,14 @@ body {
 	color: #fff;
 	border: 1px solid #e7d305;
 }
+
+#clearDB {
+	float: right;
+	background-color: #000;
+	color: #fff;
+	border: 1px solid #000;
+}
+
+.trainTitle {
+	margin-top: -2em;
+}
