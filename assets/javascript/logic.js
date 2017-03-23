@@ -21,7 +21,7 @@ var destination = "";
 var time = 0000;
 var frequency = 00;
 
-$("#submit").on("click", function() {     // upon click of submit button
+$("#submit").on("click", function(event) {     // upon click of submit button
   event.preventDefault();                 // prevents the page from default behavior of submit input reloading page 
 
   // Grabs user input
